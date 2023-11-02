@@ -10,7 +10,7 @@ function Navbar() {
 
         <div className={styles.leftContent}>
             <img src={favicon} alt="Favicon" className={styles.navbarLogo} style={{ width: '32px', height: '32px' }} />
-            <h1 className={styles.navbarTitle}>FoodBytes</h1>
+            <h1 className={styles.navbarTitle} >FoodBytes</h1>
         </div>
 
         <div className={styles.navbarLinks}>
@@ -20,11 +20,11 @@ function Navbar() {
           </div>
 
           <div className={styles.navbarButtons}>
-              <a href="/restaurants">Our restaurants</a>
+              <a href="/restaurants">Restaurants</a>
           </div>
 
           <div className={styles.navbarButtons}>
-              <a href="/cart">My cart</a>
+              <a href="/cart">Cart</a>
           </div>
 
         </div>
