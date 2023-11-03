@@ -6,13 +6,14 @@ body {
 
 .header {
   padding: 0 45px;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   height: 55px;
+  z-index: 1;
 }
 
 .header li img {
@@ -81,4 +82,71 @@ body {
 .button {
   font-family: 'Poppins';
   font-size: 20px;
+}
+
+.rectangle {
+  border: 3px solid;
+  border-color: #e7810a;
+  height: 168px;
+  left: 60%;
+  position: absolute;
+  top: 68%;
+  width: 308px;
+}
+
+.rectangle-2 {
+  border: 3px solid;
+  border-color: #e7810a;
+  height: 168px;
+  left: 20%;
+  position: absolute;
+  top: 68%;
+  width: 308px;
+}
+
+.left-button {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  left: 29%;
+  top: 92%;
+}
+
+.right-button {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  left: 62%;
+  top: 92%;
+
+}
+
+.left-button:hover {
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+
+.right-button:hover {
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+
+.left-image {
+  height: 166px;
+  left: 22%;
+  object-fit: cover;
+  position: absolute;
+  top: 70%;
+  width: 308px;
+  z-index: 2;
+}
+
+.right-image {
+  height: 166px;
+  left: 58%;
+  object-fit: cover;
+  position: absolute;
+  top: 70%;
+  width: 308px;
+  z-index: 2;
 }
