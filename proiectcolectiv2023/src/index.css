@@ -12,6 +12,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  height: 55px;
 }
 
 .header li img {
@@ -25,25 +26,30 @@ body {
 }
 
 .left-container {
+  position: absolute;
   display: flex;
+  left: 0;
   align-items: center;
   padding: 0;
-  margin-left: -3%;
 }
 
 .middle-container {
+  position: absolute;
+  left: 50%;
+  top: 3.5%;
   flex: 1;
   display: flex;
   justify-content: center;
   padding: 0;
-  margin-left: -12%;
+  transform: translate(-50%, -50%);
 }
 
 .right-container {
+  position: absolute;
+  left: 92%;
   display: flex;
   align-items: center;
   padding: 0; 
-  margin-right: -2%;
 }
 
 .nav {
@@ -58,7 +64,7 @@ body {
 
 .nav li {
   padding: 0 50px;
-  margin-right: -40px;
+  margin-right: 0;
 }
 
 .nav a:hover {
@@ -69,6 +75,7 @@ body {
   font-family: 'Poppins';
   font-size: 24px;
   margin-left: -10px;
+  margin-top: 7px;
 }
 
 .button {
