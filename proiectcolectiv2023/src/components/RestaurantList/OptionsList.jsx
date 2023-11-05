@@ -2,6 +2,10 @@ import React, {Fragment} from "react";
 import './RestaurantListStyle.css'
 function OptionsList(props)
 {
+    function handleRestaurantItemClick(item)
+    {
+        props.onItemSelected(item);
+    }
     return (
         <div>
         <div className="optionsListOuterBorder"></div>
@@ -9,7 +13,7 @@ function OptionsList(props)
             <ul>
                 {props.list.map((restaurant)=>
                     (<li className="restaurantListItems"
-                         onClick={()=>props.onItemSelected(restaurant)}>
+                         onClick={()=>handleRestaurantItemClick(restaurant)}>
                         {restaurant.name}</li>))}
             </ul>
 
