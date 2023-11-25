@@ -1,10 +1,16 @@
 import React from 'react'
-import imageLeft from '../images/imageleft.png'
-import imageRight from '../images/imageright.png'
+import Navbar from "../Navbar.js";
+import imageLeft from "./images/imageleft.png"
+import imageRight from './images/imageright.png'
+import PresentationImage from './PresentationImage.js';
+import "./HomepageStyle.css"
 
 const Homepage = () => {
   return (
-    <div className='homepage'>
+    <div>
+      <Navbar />
+      <div className='homepage'>
+        <PresentationImage />
         <div className='text-container'>
             <div className="large-text">"Where every dish is a wish"</div>
             <div className="small-text">"Where every dish is a wish"</div>
@@ -15,8 +21,9 @@ const Homepage = () => {
         <a href='/info' className='right-button'>Our mission and more info</a>
         <img src={imageLeft} alt="Left" className='left-image' />
         <img src={imageRight} alt="Right" className='right-image' />
+      </div>
     </div>
   )
 }
 
-export default Homepage
+export default Homepage;

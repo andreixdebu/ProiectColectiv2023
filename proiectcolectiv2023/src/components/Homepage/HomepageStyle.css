@@ -1,0 +1,113 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.homepage {
+  padding-top: 50px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 87vh;
+}
+
+.image-section {
+  background-image: url('../Homepage/images/presentationimage-1.png');
+  background-size: cover;
+  background-position: center;
+  height: 45%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
+.image-section img {
+  display: none;
+}
+
+.large-text {
+  font-family: 'Poppins';
+  font-size: 96px;
+  color: rgba(255, 255, 255, 0.17);
+}
+
+.small-text {
+  font-family: 'Poppins';
+  font-size: 48px; 
+  color: rgba(231, 129, 10, 1); 
+  position: relative;
+  bottom: 80px;
+}
+
+.text-container {
+  text-align: center;
+}
+
+.rectangle {
+  border: 3px solid;
+  border-color: #e7810a;
+  height: 168px;
+  left: 60%;
+  position: absolute;
+  top: 68%;
+  width: 308px;
+}
+
+.rectangle-2 {
+  border: 3px solid;
+  border-color: #e7810a;
+  height: 168px;
+  left: 20%;
+  position: absolute;
+  top: 68%;
+  width: 308px;
+}
+
+.left-button {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  left: 29%;
+  top: 92%;
+}
+
+.right-button {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  left: 62%;
+  top: 92%;
+}
+
+.left-button:hover {
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+
+.right-button:hover {
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+
+.left-image {
+  height: 166px;
+  left: 22%;
+  object-fit: cover;
+  position: absolute;
+  top: 70%;
+  width: 308px;
+  z-index: 2;
+}
+
+.right-image {
+  height: 166px;
+  left: 58%;
+  object-fit: cover;
+  position: absolute;
+  top: 70%;
+  width: 308px;
+  z-index: 2;
+}
