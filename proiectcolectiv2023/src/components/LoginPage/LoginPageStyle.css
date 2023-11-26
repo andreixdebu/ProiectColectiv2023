@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.loginButtonOuterBorder
+{
+    top:105px;
+    left:600px;
+    width: 335px;
+    height: 54px;
+    border: 3px solid;
+    border-color: #e7810a;
+    position: absolute;
+
+}
+
+.loginButtonInnerBorder
+{
+    top:120px;
+    left:614px;
+    width: 307px;
+    height: 56px;
+    border: 1px solid;
+    border-color: #585858;
+    position: absolute;
+    background-color: black;
+    color:white;
+    font-family: Poppins,sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.loginButtonInnerBorder:hover
+{
+    top:120px;
+    left:614px;
+    width: 307px;
+    height: 56px;
+    border: 1px solid;
+    border-color: #585858;
+    position: absolute;
+    background-color: black;
+    color:#e7810a;
+    font-family: Poppins,sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.emailbarOuterBorder
+{
+    top:240px;
+    left:597px;
+    width: 335px;
+    height:50px;
+    position: absolute;
+    border: 3px solid #e7810a;
+}
+
+.passwordbarOuterBorder
+{
+    top:375px;
+    left:610px;
+    width: 335px;
+    height:50px;
+    position: absolute;
+    border: 3px solid #e7810a;
+}
+
+.emailTitleLogin
+{
+
+    font-family: Poppins;
+    font-size:20px;
+    color:white;
+    position:absolute;
+    top:215px;
+    left:597px;
+}
+
+
+.emailInputError {
+    font-family: Poppins;
+    color: red;
+    position: absolute;
+    font-size: 17px;
+    left: 603px;
+    top: 308px;
+}
+
+.passwordTitle
+{
+    font-family:'Poppins';
+    font-size:20px;
+    color:white;
+    position:absolute;
+    left:597px;
+    top:350px;
+}
+
+.passwordInputError
+{
+    font-family:Poppins;
+    color:red;
+    position:absolute;
+    font-size:17px;
+    left:603px;
+    top:449px;
+
+}
+.createAccountString
+{
+    font-family:Poppins;
+    color:white;
+    position:absolute;
+    left:675px;
+    top:470px;
+    font-size:15px;
+}
+
+#hereString
+{
+    color:#e7810a;
+}
+.changePasswordString
+{
+    font-family: Poppins;
+    color: white;
+
+    position: absolute;
+    left: 695px;
+    top: 490px;
+    font-size: 15px;
+}
+.changePasswordString:hover
+{
+    font-family: Poppins;
+    color: white;
+
+    position: absolute;
+    left: 695px;
+    top: 490px;
+    font-size: 15px;
+}
+
+
+
