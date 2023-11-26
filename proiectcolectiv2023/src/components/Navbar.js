@@ -1,6 +1,6 @@
 import React from 'react'
-import accountIcon from '../images/myaccounticon.png'
-import logoIcon from '../images/logo-1.png'
+import accountIcon from '../components/Homepage/images/myaccounticon.png'
+import logoIcon from '../components/Homepage/images/logo-1.png'
 
 const Navbar = () => {
   return (
@@ -12,13 +12,13 @@ const Navbar = () => {
         <div className='middle-container'>
             <ul className='nav'>
                 <li><a href='/' className='button'>Home</a></li>
-                <li><a href='/restaurants' className='button'>Restaurants</a></li>
+                <li><a href='/restaurant-list' className='button'>Restaurants</a></li>
                 <li><a href='/cart' className='button'>Cart</a></li>
             </ul>
         </div>
         <div className='right-container'>
             <ul className='nav'>
-                <li><a href="/account"><img src={accountIcon} alt="Account"/></a></li>
+                <li><a href="/profile"><img src={accountIcon} alt="Account"/></a></li>
             </ul>
         </div>
     </div>
