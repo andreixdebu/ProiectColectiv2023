@@ -1,39 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .restaurantListItems{
+    width:500px;
+    height: 58px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items:center;
     font-family: Poppins,sans-serif;
+    font-size: 20px;
     border:1px solid;
-    border-color: white;
+    border-color: #585858;
     list-style: none;
-    margin-bottom:10px;
+    margin-bottom: -10px;
     margin-left: -30px;
     margin-right: 10px;
     margin-top: 10px;
+    padding-left: 30px;
     color: white;
+    position: relative;
 }
 .restaurantListItems:hover{
+    width:500px;
+    height: 58px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items:center;
     font-family: Poppins,sans-serif;
+    font-size: 20px;
     border:1px solid;
-    border-color: white;
+    border-color: #585858;
     list-style: none;
-    margin-bottom:10px;
+    margin-bottom:-10px;
     margin-left: -30px;
     margin-right: 10px;
     margin-top: 10px;
+    padding-left: 30px;
     color: #e7810a;
+    position: relative;
 
+
+}
+
+.restaurantListItemArrow
+{
+    position: absolute;
+    color:#585858;
+    margin-left: 400px;
+    font-size: 35px;
+}
+
+.restaurantListItems:hover .restaurantListItemArrow {
+    color: #e7810a;
 }
 
 .optionsListOuterBorder{
     top:283px;
     left: 107px;
-    width: 335px;
+    width: 636px;
     height: 673px;
     border: 3px solid;
     border-color: #e7810a;
@@ -43,10 +66,10 @@
 .optionsListInnerBorder{
     top:298px;
     left:121px;
-    width: 307px;
+    width: 572px;
     height: 643px;
     border: 1px solid;
-    border-color: #585858;
+    border-color: black;
     position: absolute;
 }
 
@@ -61,7 +84,7 @@
 }
 .restaurantNameOuterBorder{
     top:97px;
-    left:792px;
+    left:950px;
     width:340px;
     height:54px;
     border:3px solid;
@@ -71,7 +94,7 @@
 .restaurantNameInnerBorder
 {
     top:112px;
-    left:806.21px;
+    left:964.21px;
     width:311.58px;
     height:56px;
     border:1px solid;
@@ -92,7 +115,7 @@
 .restaurantDescriptionOuterBorder
 {
     top: 234px;
-    left: 792px;
+    left: 950px;
     width: 308px;
     height: 168px;
     border: 3px solid;
@@ -103,7 +126,7 @@
 .restaurantDescriptionInnerBorder
 {
     top: 252px;
-    left: 810px;
+    left:968px;
     width: 308px;
     height: 168px;
     border: 1px solid;
@@ -125,7 +148,7 @@
 .restaurantPhotoOuterBorder
 {
     top: 481px;
-    left: 824px;
+    left: 982px;
     width: 308px;
     height: 168px;
     border: 3px solid;
@@ -135,7 +158,7 @@
 
 .restaurantPhotoInnerBorder{
     top: 499px;
-    left: 810px;
+    left: 968px;
     width: 308px;
     height: 168px;
     border: 1px solid;
@@ -153,7 +176,7 @@
 .goToMenuButtonOuterBorder
 {
     top: 745px;
-    left: 792px;
+    left: 950px;
     width: 340px;
     height: 54px;
     border: 3px solid;
@@ -164,7 +187,7 @@
 .goToMenuButtonInnerBorder
 {
     top: 730px;
-    left: 806px;
+    left: 964px;
     width: 311px;
     height: 56px;
     border: 1px solid;
@@ -185,7 +208,7 @@
 .goToMenuButtonInnerBorder:hover
 {
     top: 730px;
-    left: 806px;
+    left: 964px;
     width: 311px;
     height: 56px;
     border: 1px solid;
@@ -206,7 +229,7 @@
 .adBorder
 {
     top: 856px;
-    left: 792px;
+    left: 950px;
     width: 340px;
     height: 75px;
     border: 3px solid #e7810a ;
@@ -218,5 +241,25 @@
     width:100%;
     height:100%;
     object-fit:cover;
+}
+
+.filterBarOuterBorder
+{
+    width:660px;
+    height:54px;
+    top:97px;
+    left:90px;
+    position:absolute;
+    border:3px solid #e7810a
+}
+.searchBarOuterBorder
+{
+width:660px;
+    height:54px;
+    top:210px;
+    left:90px;
+    position:absolute;
+    border:3px solid #e7810a;
+
 }
 
