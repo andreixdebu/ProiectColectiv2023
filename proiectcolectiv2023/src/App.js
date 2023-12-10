@@ -5,6 +5,7 @@ import RestaurantList from "./components/RestaurantList/RestaurantList";
 import Profile from "./components/Profile/Profile";
 import ChangePasswordPage from "./components/ChangePasswordPage/ChangePasswordPage";
 import LoginPage from "./components/LoginPage/LoginPage";
+import RegisterPage from "./components/RegisterPage/RegisterPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/change-password" element={<ChangePasswordPage/>}/>
         <Route path="/login" element={<LoginPage/>}/>
+        <Route path="/sign-up" element={<RegisterPage/>}/>
 
 
       </Routes>
