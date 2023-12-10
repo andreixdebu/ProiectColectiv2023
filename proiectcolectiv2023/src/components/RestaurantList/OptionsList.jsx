@@ -7,14 +7,16 @@ function OptionsList(props)
         props.onItemSelected(item);
     }
     return (
-        <div>
+        <div >
         <div className="optionsListOuterBorder"></div>
-        <div className="optionsListInnerBorder">
+        <div className="optionsListInnerBorder" style={{overflowY:'scroll'}}>
             <ul>
                 {props.list.map((restaurant)=>
                     (<li className="restaurantListItems"
                          onClick={()=>handleRestaurantItemClick(restaurant)}>
-                        {restaurant.name}</li>))}
+                        {restaurant.name}
+                        <div className="restaurantListItemArrow">&#8594;</div>
+                    </li>))}
             </ul>
 
         </div>
