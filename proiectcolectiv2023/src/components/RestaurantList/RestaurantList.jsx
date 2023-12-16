@@ -21,7 +21,7 @@ let MOCK_RESTAURANTS = {
             "name": "Sizzling Grill",
             "description": "Grilled perfection for meat lovers.",
             "pictureLink": "https://image.architonic.com/imgArc/project-1/4/5210463/janua-reference-napagrill-zuerich-thoeny-02.jpg",
-            "filters":["burger"]
+            "tags":["burger"]
 
         },
         {
@@ -35,7 +35,7 @@ let MOCK_RESTAURANTS = {
             "name": "Seafood Paradise",
             "description": "Dive into the ocean of flavors with our exquisite seafood dishes.",
             "pictureLink": "https://www.qantas.com/content/travelinsider/en/lifestyle/people/neil-perrys-favourite-seafood-restaurants/_jcr_content/parsysTop/hero.img.full.medium.jpg/1532411911701.jpg",
-            "filters    ":["vegetarian","burger"]
+            "tags":["vegetarian","burger"]
 
         },
 
@@ -46,20 +46,21 @@ let MOCK_RESTAURANTS = {
 
 function RestaurantList()
 {
-    const [availableRestaurant,setAvailableRestaurants] = useState([]);
-    useEffect(() => {
+    ///changed from [] to mock restaurants
+    const [availableRestaurant,setAvailableRestaurants] = useState(MOCK_RESTAURANTS);
+    {/*useEffect(() => {
         // Replace 'yourApiEndpoint' with the actual API endpoint
         fetch('http://localhost:8080/Restaurant/getAll')
             .then(response => response.json())
             .then(data => {setAvailableRestaurants(data);setModAvailableRestaurant(data);})
             .catch(error => console.error(error));
-    }, []);
+    }, []);*/}
 
     const [modAvailableRestaurant,setModAvailableRestaurant] = useState(availableRestaurant);
 
 
     const [selectedRestaurant, setSelectedRestaurant] =useState(null)
-    const [searchBarText,setSeachBarText] = useState('');
+    const [searchBarText,setSearchBarText] = useState('');
     const [selectedFilters, setSelectedFilters]= useState([]);
 
     const filterBarStyle=
@@ -85,17 +86,17 @@ function RestaurantList()
 
     useEffect(()=>
     {
-        let current_restaurants_filter=availableRestaurant;
-        if (selectedFilters.length > 0) {
-                current_restaurants_filter= current_restaurants_filter.filter(item =>
-                item.tags.some(tag => selectedFilters.includes(tag))
-            );
-        }
-        let current_restaurants_search=current_restaurants_filter;
-        {/*current restaurant search modification*/}
-        current_restaurants_search=current_restaurants_search.filter(item=>item.name_restaurant.toLowerCase().includes(searchBarText.toLowerCase()));
-        setModAvailableRestaurant(current_restaurants_search);
+        const filteredRestaurants = availableRestaurant.restaurants.filter((restaurant) => {
+            // Filter based on search bar text
+            const isSearchMatch = restaurant.name.toLowerCase().includes(searchBarText.toLowerCase());
 
+            // Filter based on selected filters
+            const hasMatchingFilter = selectedFilters.length === 0 || selectedFilters.some(filter => restaurant.tags.includes(filter));
+
+            return isSearchMatch && hasMatchingFilter;
+        });
+
+        setModAvailableRestaurant({ restaurants: filteredRestaurants });
 
 
     },[searchBarText,selectedFilters])
@@ -107,7 +108,7 @@ function RestaurantList()
 
     function handleSearchBar(event)
     {
-      setSeachBarText(event.currentTarget.value);
+      setSearchBarText(event.currentTarget.value);
     }
 
 
@@ -146,21 +147,21 @@ function RestaurantList()
             <Input size='large' style={searchBarStyle} placeholder='Search' onChange={handleSearchBar}></Input>
             </ConfigProvider>
 
-
         <OptionsList  list={modAvailableRestaurant} onItemSelected={handleSelectedRestaurant}></OptionsList>
-            {
+        {
             selectedRestaurant!=null &&
             (<Fragment>
-                    {/*restaurant name modification*/}
-            <RestaurantName name={selectedRestaurant.name_restaurant}></RestaurantName>
-            <RestaurantDescription description={selectedRestaurant.description}></RestaurantDescription>
+                    {/*restaurant name modification*/} {/*name_restaurant*/}
+                    <RestaurantName name={selectedRestaurant.name}></RestaurantName>
+                    <RestaurantDescription description={selectedRestaurant.description}></RestaurantDescription>
                     {/*restaurant picture link modification*/}
-            <RestaurantPhoto photo={selectedRestaurant.picturelink}></RestaurantPhoto>
-            <GoToMenuButton></GoToMenuButton>
-            <Ad></Ad>
-            </Fragment>
+                    {/*picturelink*/}
+                    <RestaurantPhoto photo={selectedRestaurant.pictureLink}></RestaurantPhoto>
+                    <GoToMenuButton></GoToMenuButton>
+                    <Ad></Ad>
+                </Fragment>
             )
-            }
+        }
 
 
             </Fragment>)
