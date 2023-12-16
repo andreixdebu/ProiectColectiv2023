@@ -14,7 +14,8 @@ function OptionsList(props)
                 {props.list.map((restaurant)=>
                     (<li className="restaurantListItems"
                          onClick={()=>handleRestaurantItemClick(restaurant)}>
-                        {restaurant.name}
+                        {/*name restaurant changed*/}
+                        {restaurant.name_restaurant}
                         <div className="restaurantListItemArrow">&#8594;</div>
                     </li>))}
             </ul>

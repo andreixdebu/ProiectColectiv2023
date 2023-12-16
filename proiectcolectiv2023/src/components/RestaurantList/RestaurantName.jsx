@@ -3,7 +3,7 @@ function RestaurantName(props) {
     return (
         <div>
         <div className="restaurantNameOuterBorder"></div>
-        <div className="restaurantNameInnerBorder">{props.name}</div>
+S        <div className="restaurantNameInnerBorder">{props.name}</div>
         </div>
     );
 }

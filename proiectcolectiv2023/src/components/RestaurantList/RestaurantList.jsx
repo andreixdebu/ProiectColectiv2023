@@ -21,7 +21,7 @@ let MOCK_RESTAURANTS = {
             "name": "Sizzling Grill",
             "description": "Grilled perfection for meat lovers.",
             "pictureLink": "https://image.architonic.com/imgArc/project-1/4/5210463/janua-reference-napagrill-zuerich-thoeny-02.jpg",
-            "tags":["burger"]
+            "filters":["burger"]
 
         },
         {
@@ -35,7 +35,7 @@ let MOCK_RESTAURANTS = {
             "name": "Seafood Paradise",
             "description": "Dive into the ocean of flavors with our exquisite seafood dishes.",
             "pictureLink": "https://www.qantas.com/content/travelinsider/en/lifestyle/people/neil-perrys-favourite-seafood-restaurants/_jcr_content/parsysTop/hero.img.full.medium.jpg/1532411911701.jpg",
-            "tags":["vegetarian","burger"]
+            "filters    ":["vegetarian","burger"]
 
         },
 
@@ -46,7 +46,15 @@ let MOCK_RESTAURANTS = {
 
 function RestaurantList()
 {
-    const [availableRestaurant,setAvailableRestaurants] = useState(MOCK_RESTAURANTS.restaurants);
+    const [availableRestaurant,setAvailableRestaurants] = useState([]);
+    useEffect(() => {
+        // Replace 'yourApiEndpoint' with the actual API endpoint
+        fetch('http://localhost:8080/Restaurant/getAll')
+            .then(response => response.json())
+            .then(data => {setAvailableRestaurants(data);setModAvailableRestaurant(data);})
+            .catch(error => console.error(error));
+    }, []);
+
     const [modAvailableRestaurant,setModAvailableRestaurant] = useState(availableRestaurant);
 
 
@@ -84,7 +92,8 @@ function RestaurantList()
             );
         }
         let current_restaurants_search=current_restaurants_filter;
-        current_restaurants_search=current_restaurants_search.filter(item=>item.name.toLowerCase().includes(searchBarText.toLowerCase()));
+        {/*current restaurant search modification*/}
+        current_restaurants_search=current_restaurants_search.filter(item=>item.name_restaurant.toLowerCase().includes(searchBarText.toLowerCase()));
         setModAvailableRestaurant(current_restaurants_search);
 
 
@@ -142,9 +151,11 @@ function RestaurantList()
             {
             selectedRestaurant!=null &&
             (<Fragment>
-            <RestaurantName name={selectedRestaurant.name}></RestaurantName>
+                    {/*restaurant name modification*/}
+            <RestaurantName name={selectedRestaurant.name_restaurant}></RestaurantName>
             <RestaurantDescription description={selectedRestaurant.description}></RestaurantDescription>
-            <RestaurantPhoto photo={selectedRestaurant.pictureLink}></RestaurantPhoto>
+                    {/*restaurant picture link modification*/}
+            <RestaurantPhoto photo={selectedRestaurant.picturelink}></RestaurantPhoto>
             <GoToMenuButton></GoToMenuButton>
             <Ad></Ad>
             </Fragment>

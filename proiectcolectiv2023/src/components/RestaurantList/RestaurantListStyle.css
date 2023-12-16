@@ -238,9 +238,13 @@
 
 .adStyle
 {
-    width:100%;
-    height:100%;
-    object-fit:cover;
+    top:856px;
+    left:950px;
+    width:23%;
+    height:20%;
+    border:3px solid;
+    border-color:#e7810a;
+    position:absolute
 }
 
 .filterBarOuterBorder
