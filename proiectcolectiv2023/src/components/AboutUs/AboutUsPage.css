@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.rectangle-orange{
+    width: 900px;
+    height: 550px;
+    top: 150px;
+    left: 300px;
+    border: 3px solid #E7810A;
+    display: flex;
+    position: absolute;
+}
+
+.rectangle-about-us {
+    width: 900px;
+    height: 550px;
+    top: 202px;
+    left: 350px;
+    border: 1px solid #585858;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    z-index: 1;
+    background-color: black;
+
+}
+
+.logo{
+    width: 102px;
+    height: 68px;
+    margin-right: 10px;
+    display: block;
+    left: 400px;
+    position: relative;
+}
+
+.title {
+    width: auto;
+    height: 26px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.bogdan {
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin-right: 10px;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-left: 10px;
+    left: 80px;
+}
+
+.mara{
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin-right: 10px;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    top: -45px;
+    left: 255px;
+}
+
+.calin{
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin-right: 10px;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    top: -90px;
+    left: 420px;
+}
+
+.petri{
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin-right: 10px;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    top: -135px;
+    left: 595px;
+}
+
+.debu{
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin-right: 10px;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    top: -180px;
+    left: 758px;
+}
+
+.bogdan-name{
+    width: 99px;
+height: 46px;
+top: -170px;
+left: 65px;
+font-family: 'Poppins';
+font-size: 15.4px;
+color: white;
+align-content: center;
+display: flex;
+position: relative;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.bogdan-role{
+    width: 105px;
+    height: 30px;
+    top: -165px;
+    left: 63px;
+    font-family: 'Poppins';
+    font-size: 13px;
+    color: #E7810A;
+    align-content: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mara-name{
+    width: 99px;
+height: 46px;
+top: -247px;
+left: 230px;
+font-family: 'Poppins';
+font-size: 15.4px;
+color: white;
+align-content: center;
+display: flex;
+position: relative;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.mara-role{
+    width: 105px;
+    height: 30px;
+    top: -231px;
+    left: 228px;
+    font-family: 'Poppins';
+    font-size: 13px;
+    color: #E7810A;
+    align-content: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.calin-name{
+    width: 99px;
+height: 46px;
+top: -324px;
+left: 395px;
+font-family: 'Poppins';
+font-size: 15.4px;
+color: white;
+align-content: center;
+display: flex;
+position: relative;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.calin-role{
+    width: 105px;
+    height: 30px;
+    top: -319px;
+    left: 393px;
+    font-family: 'Poppins';
+    font-size: 13px;
+    color: #E7810A;
+    align-content: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.petri-name{
+    width: 99px;
+height: 46px;
+top: -401px;
+left: 568px;
+font-family: 'Poppins';
+font-size: 15.4px;
+color: white;
+align-content: center;
+display: flex;
+position: relative;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.petri-role{
+    width: 105px;
+    height: 30px;
+    top: -396px;
+    left: 567px;
+    font-family: 'Poppins';
+    font-size: 13px;
+    color: #E7810A;
+    align-content: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.debu-name{
+    width: 99px;
+height: 46px;
+top: -465px;
+left: 731px;
+font-family: 'Poppins';
+font-size: 15.4px;
+color: white;
+align-content: center;
+display: flex;
+position: relative;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.debu-role{
+    width: 105px;
+    height: 30px;
+    top: -460px;
+    left: 729px;
+    font-family: 'Poppins';
+    font-size: 13px;
+    color: #E7810A;
+    align-content: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sergiu{
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin-right: 10px;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-left: 10px;
+    left: 80px;
+    top: -425px;
+}
+
+.lorin{
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin-right: 10px;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-left: 10px;
+    left: 247px;
+    top: -496px;
+}
+
+.toma{
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin-right: 10px;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-left: 10px;
+    left: 414px;
+    top: -567px;
+}
+
+.teo{
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin-right: 10px;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-left: 10px;
+    left: 581px;
+    top: -638px;
+}
+
+.adriana{
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin-right: 10px;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-left: 10px;
+    left: 748px;
+    top: -709px;
+}
+
+.sergiu-name{
+    width: 99px;
+height: 46px;
+top: -694px;
+left: 63px;
+font-family: 'Poppins';
+font-size: 15.4px;
+color: white;
+align-content: center;
+display: flex;
+position: relative;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.sergiu-role{
+    width: 105px;
+    height: 30px;
+    top: -690px;
+    left: 61px;
+    font-family: 'Poppins';
+    font-size: 13px;
+    color: #E7810A;
+    align-content: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.lorin-name{
+    width: 99px;
+height: 46px;
+top: -758px;
+left: 230px;
+font-family: 'Poppins';
+font-size: 15.4px;
+color: white;
+align-content: center;
+display: flex;
+position: relative;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.lorin-role{
+    width: 105px;
+    height: 30px;
+    top: -750px;
+    left: 227px;
+    font-family: 'Poppins';
+    font-size: 13px;
+    color: #E7810A;
+    align-content: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.toma-name{
+    width: 99px;
+height: 46px;
+top: -835px;
+left: 397px;
+font-family: 'Poppins';
+font-size: 15.4px;
+color: white;
+align-content: center;
+display: flex;
+position: relative;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.toma-role{
+    width: 105px;
+    height: 30px;
+    top: -830px;
+    left: 393px;
+    font-family: 'Poppins';
+    font-size: 13px;
+    color: #E7810A;
+    align-content: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.teo-name{
+    width: 99px;
+height: 46px;
+top: -900px;
+left: 564px;
+font-family: 'Poppins';
+font-size: 15.4px;
+color: white;
+align-content: center;
+display: flex;
+position: relative;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.teo-role{
+    width: 105px;
+    height: 30px;
+    top: -890px;
+    left: 561px;
+    font-family: 'Poppins';
+    font-size: 13px;
+    color: #E7810A;
+    align-content: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.adriana-name{
+    width: 99px;
+height: 46px;
+top: -970px;
+left: 731px;
+font-family: 'Poppins';
+font-size: 15.4px;
+color: white;
+align-content: center;
+display: flex;
+position: relative;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.adriana-role{
+    width: 105px;
+    height: 30px;
+    top: -947px;
+    left: 729px;
+    font-family: 'Poppins';
+    font-size: 13px;
+    color: #E7810A;
+    align-content: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.rectangle-orange2{
+    width: 243.5px;
+height: 54px;
+top: 791px;
+left: 476px;
+border: 3px solid #E7810A;
+position: relative;
+}
+
+.contact-us{
+    width: 223.15px;
+height: 56px;
+top: 720px;
+left: 486.18px;
+border: 1px solid #585858;
+background-color: black;
+color: white;
+z-index: 1;
+font-family: 'Poppins';
+font-size: 20px;
+position: relative;
+text-align: center;
+align-items: center;
+justify-content: center;
+display: flex;
+}
+
+.rectangle-orange3{
+    width: 243.5px;
+height: 54px;
+top: 665px;
+left: 719.5px;
+border: 3px solid #E7810A;
+position: relative;
+}
+
+.email{
+    width: 223.15px;
+height: 56px;
+top: 627px;
+left: 729.68px;
+border: 1px solid #585858;
+background-color: black;
+color: white;
+z-index: 1;
+font-family: 'Poppins';
+font-size: 18px;
+position: relative;
+text-align: center;
+align-items: center;
+justify-content: center;
+display: flex;
+}

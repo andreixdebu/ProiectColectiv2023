@@ -45,6 +45,11 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.middle-container:hover{
+  color: #e7810a;
+  text-decoration: none;
+}
+
 .right-container {
   position: absolute;
   left: 92%;
@@ -69,7 +74,7 @@ body {
 }
 
 .nav a:hover {
-  color: rgba(0,0,0,0.3);
+  color: #e7810a;
 }
 
 .title {
