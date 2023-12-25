@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+
+.rectangle {
+    width: 335px;
+    height: 93px;
+    top: 79px;
+    left: 25px;
+  }
+  
+  .logo {
+    width: 220px;
+    top: 35px;
+    margin-right: 100px;
+    position: relative;
+    left: 75px;
+  }
+  
+  .photo-square {
+    position: absolute;
+    width: 335px;
+    height: 307px;
+    top: 219px;
+    left: 25px;
+    border: 3px solid #e7810a;
+  }
+  
+  .burger {
+    width: 329px;
+    height: 301px;
+    top: 100px;
+    left: 28px;
+    position: relative;
+  }
+  
+  .description-square {
+    font-family: "Poppins";
+    font-size: 12.5px;
+    width: 335px;
+    height: 307px;
+    top: 583px;
+    left: 25px;
+    border: 3px;
+    position: absolute;
+    border: 3px solid #e7810a;
+    color: white;
+  }
+  
+  .rectangle-orange-title {
+    width: 487px;
+    height: 48px;
+    top: -288px;
+    left: 528px;
+    border: 3px solid #e7810a;
+    position: relative;
+  }
+  
+  .title-rectangle {
+    width: 446.3px;
+    height: 50px;
+    top: -320px;
+    left: 551px;
+    border: 1px solid #585858;
+    position: relative;
+    z-index: 2;
+    background-color: black;
+  }
+  
+  .orange-filter {
+    width: 487px;
+    height: 48px;
+    top: -305px;
+    left: 528px;
+    border: 3px solid #e7810a;
+    position: relative;
+  }
+  
+  .filter {
+    width: 446.3px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: 1px solid #585858;
+    cursor: pointer;
+    top: -340px;
+    position: relative;
+    left: 551px;
+    font-family: 'Poppins';
+    font-size: 16px;
+  }
+  
+  .orange-search {
+    width: 487px;
+    height: 48px;
+    top: -305px;
+    left: 528px;
+    border: 3px solid #e7810a;
+    position: relative;
+  }
+  
+  .search {
+    width: 446.3px;
+    height: 50px;
+    border: 1px solid #585858;
+    padding: 5px;
+    position: relative;
+    background-color: black;
+    top: -370px;
+    left: 550px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .orange-menu {
+    width: 487px;
+    height: 562px;
+    top: -300px;
+    left: 528px;
+    border: 3px solid #e7810a;
+    position: relative;
+  }
+  
+  .item1 {
+    width: 423px;
+    height: 48px;
+    top: -850px;
+    left: 550px;
+    border: 1px solid #585858;
+    position: relative;
+  }
+  
+  .item1-text {
+    font-family: "Poppins";
+    color: white;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  
+  .gramaj {
+    color: #585858;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -25px;
+    margin-left: 224px;
+  }
+  
+  .price {
+    color: #e7810a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -25px;
+    margin-left: 250px;
+  }
+  
+  .checkbox-item1,
+  .checkbox-item2 {
+    position: absolute;
+    top: -850px;
+    left: 620px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-text {
+    font-family: 'Poppins';
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #995b11;
+    border-radius: 7px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .checkbox.checked {
+    border-color: #995b11;
+    background-color: #e7810a;
+  }
+  
+  
+  
+  .item2 {
+    width: 423px;
+    height: 48px;
+    top: -880px;
+    left: 550px;
+    border: 1px solid #585858;
+    position: relative;
+  }
+  
+  .item2-text {
+    font-family: "Poppins";
+    color: white;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  
+  .checkbox-item2 {
+    width: 26px;
+    top: -6px;
+    left: 385px;
+    position: relative;
+    border: none;
+  }
+  
+  .orange-go-to-cart {
+    width: 243.5px;
+    height: 54px;
+    top: -350px;
+    left: 528px;
+    border: 3px solid #e7810a;
+    position: relative;
+  }
+  
+  .go-to-cart {
+    font-family: "Poppins";
+    font-size: 16px;
+    width: 223.15px;
+    height: 54px;
+    top: -420px;
+    left: 541px;
+    border: 1px solid #585858;
+    position: relative;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .orange-add-to-cart {
+    width: 243.5px;
+    height: 54px;
+    top: -475px;
+    left: 777px;
+    border: 3px solid #e7810a;
+    position: relative;
+  }
+  
+  .add-to-cart {
+    font-family: "Poppins";
+    font-size: 16px;
+    width: 223.15px;
+    height: 56px;
+    top: -520px;
+    left: 790px;
+    border: 1px solid #585858;
+    position: relative;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .orange-reservation {
+    font-family: "Poppins";
+    width: 340px;
+    height: 245px;
+    top: -1490px;
+    left: 1135px;
+    border: 3px solid #e7810a;
+    position: relative;
+    color: white;
+  }
+  
+  .orange-reservation div {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  
+  .orange-reservation label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .orange-reservation input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #585858;
+    background-color: black;
+    color: white;
+  }
+  
+  .table {
+    font-family: "Poppins";
+    width: 340px;
+    height: 238px;
+    top: -1440px;
+    left: 1135px;
+    border: 3px solid #e7810a;
+    position: relative;
+    color: white;
+    justify-content: center;
+    display: flex;
+    font-size: 18px;
+    line-height: 5;
+  }
+  
+  .checkbox-container {
+    position: absolute;
+    top: 500px;
+    left: 1140px;
+    margin-top: 30px;
+  }
+  
+  .checkbox-text {
+    font-family: "Poppins";
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-top: -22px;
+    margin-left: 175px;
+  }
+  
+  .checkbox {
+    width: 51px;
+    height: 21px;
+    border: 2px solid #995b11;
+    border-radius: 7px;
+    margin-left: 100px;
+    cursor: pointer;
+  }
+  
+  .checkbox.checked {
+    border-color: #995b11;
+    background-color: #e7810a;
+  }
+  
+  .checkbox-text p {
+    font-size: 14px;
+  }
+  
+  .orange-calendar {
+    font-family: "Poppins";
+    font-size: 18px;
+    width: 340px;
+    height: 238px;
+    top: -1400px;
+    left: 1135px;
+    border: 3px solid #e7810a;
+    position: relative;
+    color: white;
+    position: relative;
+    display: flex;
+    line-height: 4;
+  }
+  
+  .data-rectangle {
+    width: 318px;
+    height: 29px;
+    border: 1px solid #585858;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    padding: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    top: -30px;
+    left: 10px;
+  }
+  
+  .custom-calendar-wrapper {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: white;
+    position: relative;
+    top: 15px;
+    z-index: 2;
+  }
+  
+  .selected-date {
+    background-color: black;
+    color: white;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    margin-top: 15px;
+  }
+  
+  .time-rectangle {
+    width: 318px;
+    height: 29px;
+    border: 1px solid #585858;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    padding: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    left: -308px;
+    top: 75px;
+  }
+  
+  .custom-time-picker-wrapper {
+    color: black;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    z-index: 2;
+  }
+  
+  .selected-time {
+    color: white;
+    z-index: 2;
+    top: 5px;
+  }
+  
+  .ora {
+    position: relative;
+    top: 110px;
+    left: -318px;
+  }
+  
+  .orange-make-reservation {
+    width: 340px;
+    height: 54px;
+    top: -1314px;
+    left: 1135px;
+    border: 3px solid #e7810a;
+    position: relative;
+  }
+  
+  .make-a-reservation {
+    font-family: "Poppins";
+    font-size: 16px;
+    width: 320px;
+    height: 54px;
+    top: -1385px;
+    left: 1147px;
+    border: 1px solid #585858;
+    position: relative;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+  }
+  
