@@ -1,1 +1,0 @@
-# ProiectColectiv2023

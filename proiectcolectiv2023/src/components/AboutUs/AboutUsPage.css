@@ -26,12 +26,14 @@
 }
 
 .logo{
-    width: 102px;
-    height: 68px;
+    width: 40px;
+    height: 120px;
     margin-right: 10px;
-    display: block;
+    display: flex;
     left: 400px;
     position: relative;
+    top: 20px;
+    margin-top: -10px;
 }
 
 .title {
@@ -40,8 +42,9 @@
     color: white;
     display: flex;
     justify-content: center;
-    margin-top: 0;
+    margin-top: -50px;
     margin-bottom: 10px;
+    top: -20px;
 }
 
 .bogdan {

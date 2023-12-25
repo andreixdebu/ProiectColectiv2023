@@ -15,7 +15,7 @@ const Homepage = () => {
             <div className="large-text">"Where every dish is a wish"</div>
             <div className="small-text">"Where every dish is a wish"</div>
         </div>
-        <div className='rectangle'></div>
+        <div className='rectangle-1'></div>
         <div className='rectangle-2'></div>
         <a href='/best-rated' className='left-button'>Best rated</a>
         <a href='/info' className='right-button'>Our mission and more info</a>
