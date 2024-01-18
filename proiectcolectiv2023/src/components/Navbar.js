@@ -18,7 +18,7 @@ const Navbar = () => {
         </div>
         <div className='right-container'>
             <ul className='nav'>
-                <li><a href="/profile"><img src={accountIcon} alt="Account"/></a></li>
+                <li><a href="/login"><img src={accountIcon} alt="Account"/></a></li>
             </ul>
         </div>
     </div>

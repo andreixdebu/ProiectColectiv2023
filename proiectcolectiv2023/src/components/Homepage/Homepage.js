@@ -18,7 +18,7 @@ const Homepage = () => {
         <div className='rectangle-1'></div>
         <div className='rectangle-2'></div>
         <a href='/best-rated' className='left-button'>Best rated</a>
-        <a href='/info' className='right-button'>Our mission and more info</a>
+        <a href='/about-us' className='right-button'>Our mission and more info</a>
         <img src={imageLeft} alt="Left" className='left-image' />
         <img src={imageRight} alt="Right" className='right-image' />
       </div>
