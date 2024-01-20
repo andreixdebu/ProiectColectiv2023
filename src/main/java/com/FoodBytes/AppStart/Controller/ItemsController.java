@@ -37,4 +37,13 @@ public class ItemsController {
 
         return IS.getAllItems();
     }
+    @GetMapping("/getbymenuid")
+    public List<Items> list5(@RequestBody Integer v){
+
+        return IS.getitemsbymenuid(v);
+    }
+
+
+
+
 }

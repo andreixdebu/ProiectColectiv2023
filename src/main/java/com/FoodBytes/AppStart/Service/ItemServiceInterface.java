@@ -12,4 +12,6 @@ public interface ItemServiceInterface {
     public Items updateItem(Items item);
 
     public void deleteItem(Items item);
+
+    public List<Items> getitemsbymenuid(Integer q);
 }
