@@ -8,8 +8,8 @@ VALUES
 -- Insert data into Restaurant table
 INSERT INTO Restaurant (name_restaurant, address, description, menu_id, tables_avaliable, total_nb_tables, picturelink, tags)
 VALUES 
-    ('KFC', 'Strada Iuliu Maniu Nr. 1', 'a global chicken restaurant brand with a rich, decades-long history of success', 1, 20, 30, 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fcluj.fest.ro%2Flocuri%2Ffast-food%2Fkfc-centru&psig=AOvVaw1xWj5VI58sVKwSF5q7zR7G&ust=1705842474332000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCIjm2ciE7IMDFQAAAAAdAAAAABAD', 'FastFood; Burger'),
-    ('Chios', 'Central Parck Cluj-Napoca', 'Aducem oamenii împreună, pentru o comunitate unită, solidară și o identitate autentică în Cluj-Napoca. #TogetherAsOne.', 2, 15, 25, 'https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.chios.ro%2Fwp-content%2Fuploads%2F2020%2F06%2F13403191_10153751519117887_6326330941746650754_o-1024x765.jpg&tbnid=65xAjRT2bN7SOM&vet=12ahUKEwjcsKOVi-yDAxXki_0HHZ-FD9oQMygAegQIARBP..i&imgrefurl=https%3A%2F%2Fwww.chios.ro%2Frezervari%2F&docid=8Wj866aoELy6lM&w=1024&h=765&q=chios%20cluj&ved=2ahUKEwjcsKOVi-yDAxXki_0HHZ-FD9oQMygAegQIARBP', 'Romantic; Burger; Italian; Pizza'),
+    ('KFC', 'Strada Iuliu Maniu Nr. 1', 'a global chicken restaurant brand with a rich, decades-long history of success', 1, 20, 30, 'https://cluj.fest.ro/files/places/4/image_422_2_large.jpg', 'FastFood; Burger'),
+    ('Chios', 'Central Parck Cluj-Napoca', 'Aducem oamenii împreună, pentru o comunitate unită, solidară și o identitate autentică în Cluj-Napoca. #TogetherAsOne.', 2, 15, 25, 'https://vinenunta.ro/wp-content/uploads/2022/07/Restaurante-nunta-Cluj-CHIOS-Social-Lounge.jpg', 'Romantic, Burger, Italian, Pizza'),
 	('McDonalds', 'Piața Mihai Viteazu 1', 'one of the world s largest and most recognized fast-food chains', 1, 20, 30, 'https://lh3.googleusercontent.com/p/AF1QipOL48PMH0_06Hk7eyR2M9Hh8-3d62edTrz2ZS_Y=s156-w156-h108-n-k-no', 'FastFood; Burger');
 
 -- Insert data into Menu table
