@@ -44,19 +44,6 @@ public class ItemServiceImplementation implements ItemServiceInterface {
     }
 
     @Override
-    public List<Items> getitemsbymenuid(Integer s){
-        List<Items> menu= getAllItems();
-        List<Items> o = new ArrayList<Items>();
-        for (Items t: menu){
-            if (t.getMenuID()==s){
-                o.add(t);
-            }
-            return o;
-        }
-        return o;
-    }
-
-    @Override
     public void deleteItem(Items item) {
         i.delete(item);
     }
