@@ -5,12 +5,26 @@ import com.FoodBytes.AppStart.Repository.ItemsRepoInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 @Service
 public class ItemServiceImplementation implements ItemServiceInterface {
 
     @Autowired
     private ItemsRepoInterface i;
+
+
+    @Override
+    public List<Items> getitemsbymenuid(Integer s){
+        List<Items> menu= getAllItems();
+        List<Items> o = new ArrayList<Items>();
+        for (Items t: menu){
+            if (t.getMenuID()==s){
+                o.add(t);
+            }
+        }
+        return o;
+    }
 
     @Override
     public Items saveItem(Items item) {

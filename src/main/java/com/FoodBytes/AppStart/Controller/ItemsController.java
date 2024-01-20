@@ -20,6 +20,12 @@ public class ItemsController {
         return "New Item is added";
     }
 
+    @GetMapping("/getbymenuid")
+    public List<Items> list5(@RequestBody Integer v){
+
+        return IS.getitemsbymenuid(v);
+    }
+
     @PostMapping("/update")
     public String update(@RequestBody Items item){
         IS.updateItem(item);
